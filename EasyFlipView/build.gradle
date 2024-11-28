@@ -1,21 +1,5 @@
 apply plugin: 'com.android.library'
 
-ext {
-    PUBLISH_GROUP_ID = 'com.wajahatkarim'
-    PUBLISH_ARTIFACT_ID = 'EasyFlipView'
-    PUBLISH_VERSION = '3.0.3a'
-    PUBLISH_DESCRIPTION = 'A quick and easy flip view through which you can create views with two sides like credit cards, poker cards etc.'
-    PUBLISH_URL = 'https://github.com/wajahatkarim3/EasyFlipView'
-    PUBLISH_LICENSE_NAME = 'Apache License'
-    PUBLISH_LICENSE_URL = 'https://github.com/wajahatkarim3/EasyFlipView/blob/master/LICENSE'
-    PUBLISH_DEVELOPER_ID = 'wajahatkarim'
-    PUBLISH_DEVELOPER_NAME = 'Wajahat Karim'
-    PUBLISH_DEVELOPER_EMAIL = 'wajahatkarim3@mail.com'
-    PUBLISH_SCM_CONNECTION = 'scm:git:github.com/wajahatkarim3/EasyFlipView.git'
-    PUBLISH_SCM_DEVELOPER_CONNECTION = 'scm:git:ssh://github.com/wajahatkarim3/EasyFlipView.git'
-    PUBLISH_SCM_URL = 'https://github.com/wajahatkarim3/EasyFlipView/tree/master'
-}
-
 android {
     compileSdkVersion 28
 
@@ -49,5 +33,3 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
     testImplementation 'junit:junit:4.12'
 }
-
-apply from: "${rootDir}/scripts/publish-module.gradle"
