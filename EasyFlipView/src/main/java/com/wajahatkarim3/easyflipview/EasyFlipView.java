@@ -235,7 +235,8 @@ public class EasyFlipView extends FrameLayout {
             mSetRightOut.addListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animator) {
-
+                    if (onFlipListener != null)
+                            onFlipListener.onViewFlipStarted(EasyFlipView.this, mFlipState);
                 }
 
                 @Override
@@ -729,6 +730,13 @@ public class EasyFlipView extends FrameLayout {
      * The Flip Animation Listener for animations and flipping complete listeners
      */
     public interface OnFlipAnimationListener {
+        /**
+         * Called when flip animation is started.
+         *
+         * @param currentSide at the start of animation. Either can be
+         *                       FlipState.FRONT_SIDE or FlipState.BACK_SIDE
+         */
+        void onViewFlipStarted(EasyFlipView easyFlipView, FlipState currentSide);
         /**
          * Called when flip animation is completed.
          *
