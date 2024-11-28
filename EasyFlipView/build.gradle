@@ -49,5 +49,3 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
     testImplementation 'junit:junit:4.12'
 }
-
-apply from: "${rootDir}/scripts/publish-module.gradle"
