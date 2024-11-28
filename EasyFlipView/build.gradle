@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 ext {
     PUBLISH_GROUP_ID = 'com.wajahatkarim'
     PUBLISH_ARTIFACT_ID = 'EasyFlipView'
-    PUBLISH_VERSION = '3.0.3'
+    PUBLISH_VERSION = '3.0.3a'
     PUBLISH_DESCRIPTION = 'A quick and easy flip view through which you can create views with two sides like credit cards, poker cards etc.'
     PUBLISH_URL = 'https://github.com/wajahatkarim3/EasyFlipView'
     PUBLISH_LICENSE_NAME = 'Apache License'
