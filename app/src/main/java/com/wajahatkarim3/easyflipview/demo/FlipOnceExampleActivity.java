@@ -39,6 +39,11 @@ public class FlipOnceExampleActivity extends AppCompatActivity
 
         easyFlipView.setOnFlipListener(new EasyFlipView.OnFlipAnimationListener() {
             @Override
+            public void onViewFlipStarted(EasyFlipView easyFlipView, EasyFlipView.FlipState currentSide) {
+                Toast.makeText(FlipOnceExampleActivity.this,
+                        "Flipped once started ! Ace revealed " + currentSide, Toast.LENGTH_LONG).show();
+            }
+            @Override
             public void onViewFlipCompleted(EasyFlipView easyFlipView, EasyFlipView.FlipState newCurrentSide) {
                 Toast.makeText(FlipOnceExampleActivity.this,
                         "Flipped once ! Ace revealed " + newCurrentSide, Toast.LENGTH_LONG).show();
